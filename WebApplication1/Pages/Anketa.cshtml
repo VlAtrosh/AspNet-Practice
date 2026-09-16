@@ -1,0 +1,56 @@
+﻿@page
+@model AnketaApp.Pages.AnketaModel
+@{
+    ViewData["Title"] = "Анкета";
+}
+
+<h1>Заполните анкету</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.FirstName" class="form-label"></label>
+                <input asp-for="Anketa.FirstName" class="form-control" />
+                <span asp-validation-for="Anketa.FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.LastName" class="form-label"></label>
+                <input asp-for="Anketa.LastName" class="form-control" />
+                <span asp-validation-for="Anketa.LastName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.Age" class="form-label"></label>
+                <input asp-for="Anketa.Age" class="form-control" />
+                <span asp-validation-for="Anketa.Age" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.Email" class="form-label"></label>
+                <input asp-for="Anketa.Email" class="form-control" />
+                <span asp-validation-for="Anketa.Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.City" class="form-label"></label>
+                <input asp-for="Anketa.City" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Anketa.About" class="form-label"></label>
+                <textarea asp-for="Anketa.About" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

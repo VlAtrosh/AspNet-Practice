@@ -1,0 +1,26 @@
+﻿@page
+@model AnketaApp.Pages.SuccessModel
+@{
+    ViewData["Title"] = "Успех";
+}
+
+<div class="text-center">
+    <h1 class="text-success">Заявка успешно отправлена!</h1>
+    <p class="lead">Спасибо, что заполнили анкету.</p>
+</div>
+
+<hr />
+
+<h2>Ваши данные:</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Имя:</strong> @TempData["FirstName"]</p>
+        <p><strong>Фамилия:</strong> @TempData["LastName"]</p>
+        <p><strong>Возраст:</strong> @TempData["Age"]</p>
+        <p><strong>Email:</strong> @TempData["Email"]</p>
+        <p><strong>Город:</strong> @TempData["City"]</p>
+        <p><strong>О себе:</strong> @TempData["About"]</p>
+    </div>
+</div>
+
+<a href="/Anketa" class="btn btn-secondary mt-3">Заполнить еще раз</a>
