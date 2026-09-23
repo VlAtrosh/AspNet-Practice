@@ -1,0 +1,427 @@
+17:52:38.786 [INF] Now listening on: https://localhost:7283
+17:52:38.833 [INF] Now listening on: http://localhost:5189
+17:52:38.885 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+17:52:39.571 [INF] Application started. Press Ctrl+C to shut down.
+17:52:39.572 [INF] Hosting environment: Development
+17:52:39.573 [INF] Content root path: C:\Users\Vlado\source\repos\WebApplication3\WebApplication3
+17:52:51.842 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+17:52:52.171 [INF] ==============================================
+17:52:52.172 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+17:52:52.187 [INF]      Метод: GET
+17:52:52.189 [INF]      Путь: /
+17:52:52.190 [INF]      Query: 
+17:52:52.191 [INF]      Content-Type: null
+17:52:52.193 [INF]      IP клиента: ::1
+17:52:52.194 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+17:52:52.195 [INF]      TraceIdentifier: 0HNOPG97V6I6J:00000001
+17:52:52.196 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+17:52:55.768 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\wwwroot\index.html'
+17:52:55.771 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+17:52:55.772 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+17:52:55.774 [INF]      Status Code: 200
+17:52:55.775 [INF]      Content-Type: text/html
+17:52:55.777 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+17:52:55.778 [INF]      Время обработки: 3605 мс
+17:52:55.780 [INF] ==============================================
+17:52:55.787 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 200 null text/html 3950.815ms
+17:52:56.092 [INF] Request starting HTTP/2 GET https://localhost:7283/_framework/aspnetcore-browser-refresh.js - null null
+17:52:56.092 [INF] Request starting HTTP/2 GET https://localhost:7283/_vs/browserLink - null null
+17:52:56.104 [INF] Request finished HTTP/2 GET https://localhost:7283/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 12.6719ms
+17:52:56.352 [INF] Request finished HTTP/2 GET https://localhost:7283/_vs/browserLink - 200 null text/javascript; charset=UTF-8 260.5179ms
+17:52:57.874 [INF] Request starting HTTP/2 GET https://localhost:7283/favicon.ico - null null
+17:52:57.877 [INF] ==============================================
+17:52:57.878 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+17:52:57.879 [INF]      Метод: GET
+17:52:57.880 [INF]      Путь: /favicon.ico
+17:52:57.880 [INF]      Query: 
+17:52:57.881 [INF]      Content-Type: null
+17:52:57.882 [INF]      IP клиента: ::1
+17:52:57.883 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+17:52:57.884 [INF]      TraceIdentifier: 0HNOPG97V6I6J:00000007
+17:52:57.885 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+17:52:57.887 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+17:52:57.888 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+17:52:57.888 [INF]      Status Code: 404
+17:52:57.889 [INF]      Content-Type: null
+17:52:57.890 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+17:52:57.891 [INF]      Время обработки: 12 мс
+17:52:57.891 [INF] ==============================================
+17:52:57.892 [INF] Request finished HTTP/2 GET https://localhost:7283/favicon.ico - 404 0 null 18.9362ms
+17:52:57.896 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/favicon.ico, Response status code: 404
+17:56:52.648 [INF] Request starting HTTP/2 POST https://localhost:7283/api/anketa - application/json 115
+17:56:52.657 [INF] ==============================================
+17:56:52.658 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+17:56:52.658 [INF]      Метод: POST
+17:56:52.659 [INF]      Путь: /api/anketa
+17:56:52.660 [INF]      Query: 
+17:56:52.660 [INF]      Content-Type: application/json
+17:56:52.661 [INF]      IP клиента: ::1
+17:56:52.662 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+17:56:52.662 [INF]      TraceIdentifier: 0HNOPG97V6I6J:00000009
+17:56:52.663 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+17:56:52.672 [INF] Executing endpoint 'HTTP: POST /api/anketa'
+17:56:52.686 [INF] 📥 Получена анкета: Иван Иванов, 25 лет, ivan@example.com
+17:56:52.716 [INF] Анкета успешно обработана
+17:56:52.753 [INF] Setting HTTP status code 200.
+17:56:52.760 [INF] Writing value of type '<>f__AnonymousType1`2' as Json.
+17:56:52.763 [INF] Executed endpoint 'HTTP: POST /api/anketa'
+17:56:52.765 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+17:56:52.765 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+17:56:52.766 [INF]      Status Code: 200
+17:56:52.767 [INF]      Content-Type: application/json; charset=utf-8
+17:56:52.768 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+17:56:52.769 [INF]      Время обработки: 110 мс
+17:56:52.770 [INF] ==============================================
+17:56:52.770 [INF] Request finished HTTP/2 POST https://localhost:7283/api/anketa - 200 null application/json; charset=utf-8 122.6249ms
+18:09:15.049 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5189: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+ ---> System.Net.Sockets.SocketException (10048): Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+18:12:35.261 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5189: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+ ---> System.Net.Sockets.SocketException (10048): Обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+18:14:20.124 [INF] Now listening on: http://localhost:5189
+18:14:20.163 [INF] Application started. Press Ctrl+C to shut down.
+18:14:20.164 [INF] Hosting environment: Development
+18:14:20.166 [INF] Content root path: C:\Users\Vlado\source\repos\WebApplication3\WebApplication3
+18:14:58.300 [INF] Request starting HTTP/1.1 GET http://localhost:5189/ - null null
+18:14:58.419 [INF] ==============================================
+18:14:58.420 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:14:58.421 [INF]      Метод: GET
+18:14:58.424 [INF]      Путь: /
+18:14:58.426 [INF]      Query: 
+18:14:58.427 [INF]      Content-Type: null
+18:14:58.431 [INF]      IP клиента: 127.0.0.1
+18:14:58.433 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:14:58.434 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000001
+18:14:58.436 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:14:58.521 [INF] Sending file. Request path: '/index.html'. Physical path: 'C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\wwwroot\index.html'
+18:14:58.524 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:14:58.525 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:14:58.526 [INF]      Status Code: 200
+18:14:58.527 [INF]      Content-Type: text/html
+18:14:58.529 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:14:58.530 [INF]      Время обработки: 110 мс
+18:14:58.533 [INF] ==============================================
+18:14:58.536 [INF] Request finished HTTP/1.1 GET http://localhost:5189/index.html - 200 3099 text/html 237.0346ms
+18:15:00.515 [INF] Request starting HTTP/1.1 GET http://localhost:5189/favicon.ico - null null
+18:15:00.519 [INF] ==============================================
+18:15:00.520 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:00.521 [INF]      Метод: GET
+18:15:00.523 [INF]      Путь: /favicon.ico
+18:15:00.525 [INF]      Query: 
+18:15:00.526 [INF]      Content-Type: null
+18:15:00.527 [INF]      IP клиента: 127.0.0.1
+18:15:00.529 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:00.530 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000002
+18:15:00.531 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:00.534 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:00.535 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:00.537 [INF]      Status Code: 404
+18:15:00.538 [INF]      Content-Type: null
+18:15:00.539 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:00.541 [INF]      Время обработки: 20 мс
+18:15:00.542 [INF] ==============================================
+18:15:00.544 [INF] Request finished HTTP/1.1 GET http://localhost:5189/favicon.ico - 404 0 null 29.2423ms
+18:15:00.549 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5189/favicon.ico, Response status code: 404
+18:15:13.580 [INF] Request starting HTTP/1.1 GET http://localhost:5189/throw - null null
+18:15:13.585 [INF] ==============================================
+18:15:13.586 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:13.587 [INF]      Метод: GET
+18:15:13.588 [INF]      Путь: /throw
+18:15:13.590 [INF]      Query: 
+18:15:13.591 [INF]      Content-Type: null
+18:15:13.593 [INF]      IP клиента: 127.0.0.1
+18:15:13.595 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:13.596 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000003
+18:15:13.597 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:13.602 [INF] Executing endpoint 'HTTP: GET /throw'
+18:15:13.604 [INF] Executed endpoint 'HTTP: GET /throw'
+18:15:13.607 [ERR] [5] ОШИБКА при обработке запроса
+System.InvalidOperationException: Тестовое исключение для демонстрации
+   at Program.<>c.<<Main>$>b__0_3() in C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\Program.cs:line 73
+   at lambda_method4(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at LifecycleDemo.Middlewares.LifecycleMiddleware.InvokeAsync(HttpContext context) in C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\Middlewares\LifecycleMiddleware.cs:line 36
+18:15:13.637 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Тестовое исключение для демонстрации
+   at Program.<>c.<<Main>$>b__0_3() in C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\Program.cs:line 73
+   at lambda_method4(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.DefaultFilesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at LifecycleDemo.Middlewares.LifecycleMiddleware.InvokeAsync(HttpContext context) in C:\Users\Vlado\source\repos\WebApplication3\WebApplication3\Middlewares\LifecycleMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+18:15:13.645 [INF] ==============================================
+18:15:13.646 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:13.648 [INF]      Метод: GET
+18:15:13.649 [INF]      Путь: /error
+18:15:13.650 [INF]      Query: 
+18:15:13.651 [INF]      Content-Type: null
+18:15:13.652 [INF]      IP клиента: 127.0.0.1
+18:15:13.654 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:13.655 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000003
+18:15:13.656 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:13.658 [INF] Executing endpoint 'HTTP: GET /error'
+18:15:13.710 [INF] Setting HTTP status code 500.
+18:15:13.728 [INF] Writing value of type 'ProblemDetails' as Json.
+18:15:13.735 [INF] Executed endpoint 'HTTP: GET /error'
+18:15:13.736 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:13.737 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:13.738 [INF]      Status Code: 500
+18:15:13.740 [INF]      Content-Type: application/problem+json
+18:15:13.741 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:13.742 [INF]      Время обработки: 95 мс
+18:15:13.744 [INF] ==============================================
+18:15:13.745 [INF] Request finished HTTP/1.1 GET http://localhost:5189/throw - 500 null application/problem+json 164.8884ms
+18:15:14.103 [INF] Request starting HTTP/1.1 GET http://localhost:5189/favicon.ico - null null
+18:15:14.106 [INF] ==============================================
+18:15:14.108 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:14.109 [INF]      Метод: GET
+18:15:14.110 [INF]      Путь: /favicon.ico
+18:15:14.112 [INF]      Query: 
+18:15:14.113 [INF]      Content-Type: null
+18:15:14.114 [INF]      IP клиента: 127.0.0.1
+18:15:14.116 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:14.117 [INF]      TraceIdentifier: 0HNOPGLN5LK3G:00000001
+18:15:14.118 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:14.120 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:14.121 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:14.122 [INF]      Status Code: 404
+18:15:14.124 [INF]      Content-Type: null
+18:15:14.125 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:14.126 [INF]      Время обработки: 18 мс
+18:15:14.128 [INF] ==============================================
+18:15:14.129 [INF] Request finished HTTP/1.1 GET http://localhost:5189/favicon.ico - 404 0 null 26.2765ms
+18:15:14.133 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5189/favicon.ico, Response status code: 404
+18:15:57.206 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger - null null
+18:15:57.209 [INF] ==============================================
+18:15:57.210 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.211 [INF]      Метод: GET
+18:15:57.213 [INF]      Путь: /swagger
+18:15:57.214 [INF]      Query: 
+18:15:57.215 [INF]      Content-Type: null
+18:15:57.216 [INF]      IP клиента: 127.0.0.1
+18:15:57.218 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.219 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000004
+18:15:57.220 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.221 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.223 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.224 [INF]      Status Code: 301
+18:15:57.226 [INF]      Content-Type: null
+18:15:57.227 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.228 [INF]      Время обработки: 17 мс
+18:15:57.229 [INF] ==============================================
+18:15:57.230 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger - 301 0 null 24.8122ms
+18:15:57.235 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/index.html - null null
+18:15:57.238 [INF] ==============================================
+18:15:57.240 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.241 [INF]      Метод: GET
+18:15:57.242 [INF]      Путь: /swagger/index.html
+18:15:57.244 [INF]      Query: 
+18:15:57.245 [INF]      Content-Type: null
+18:15:57.247 [INF]      IP клиента: 127.0.0.1
+18:15:57.248 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.249 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000005
+18:15:57.250 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.293 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.294 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.295 [INF]      Status Code: 200
+18:15:57.297 [INF]      Content-Type: text/html;charset=utf-8
+18:15:57.298 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.299 [INF]      Время обработки: 59 мс
+18:15:57.301 [INF] ==============================================
+18:15:57.302 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/index.html - 200 null text/html;charset=utf-8 67.1016ms
+18:15:57.459 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui.css - null null
+18:15:57.460 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/index.css - null null
+18:15:57.461 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui-bundle.js - null null
+18:15:57.462 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui-standalone-preset.js - null null
+18:15:57.462 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/index.js - null null
+18:15:57.464 [INF] ==============================================
+18:15:57.468 [INF] ==============================================
+18:15:57.471 [INF] ==============================================
+18:15:57.475 [INF] ==============================================
+18:15:57.478 [INF] ==============================================
+18:15:57.478 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.479 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.480 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.481 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.482 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.483 [INF]      Метод: GET
+18:15:57.484 [INF]      Метод: GET
+18:15:57.485 [INF]      Метод: GET
+18:15:57.486 [INF]      Метод: GET
+18:15:57.487 [INF]      Метод: GET
+18:15:57.488 [INF]      Путь: /swagger/swagger-ui.css
+18:15:57.490 [INF]      Путь: /swagger/index.css
+18:15:57.491 [INF]      Путь: /swagger/swagger-ui-bundle.js
+18:15:57.492 [INF]      Путь: /swagger/swagger-ui-standalone-preset.js
+18:15:57.493 [INF]      Путь: /swagger/index.js
+18:15:57.494 [INF]      Query: 
+18:15:57.495 [INF]      Query: 
+18:15:57.497 [INF]      Query: 
+18:15:57.498 [INF]      Query: 
+18:15:57.499 [INF]      Query: 
+18:15:57.500 [INF]      Content-Type: null
+18:15:57.501 [INF]      Content-Type: null
+18:15:57.502 [INF]      Content-Type: null
+18:15:57.503 [INF]      Content-Type: null
+18:15:57.504 [INF]      Content-Type: null
+18:15:57.505 [INF]      IP клиента: 127.0.0.1
+18:15:57.507 [INF]      IP клиента: 127.0.0.1
+18:15:57.508 [INF]      IP клиента: 127.0.0.1
+18:15:57.509 [INF]      IP клиента: 127.0.0.1
+18:15:57.510 [INF]      IP клиента: 127.0.0.1
+18:15:57.511 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.513 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.514 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.515 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.516 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.517 [INF]      TraceIdentifier: 0HNOPGLN5LK3F:00000006
+18:15:57.518 [INF]      TraceIdentifier: 0HNOPGLN5LK3H:00000001
+18:15:57.519 [INF]      TraceIdentifier: 0HNOPGLN5LK3I:00000001
+18:15:57.520 [INF]      TraceIdentifier: 0HNOPGLN5LK3J:00000001
+18:15:57.522 [INF]      TraceIdentifier: 0HNOPGLN5LK3K:00000001
+18:15:57.523 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.525 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.526 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.527 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.528 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.532 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+18:15:57.534 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.535 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.536 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.537 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.539 [INF]      Status Code: 200
+18:15:57.540 [INF]      Status Code: 200
+18:15:57.541 [INF]      Content-Type: application/javascript;charset=utf-8
+18:15:57.542 [INF]      Content-Type: text/css
+18:15:57.544 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.545 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.546 [INF]      Время обработки: 66 мс
+18:15:57.547 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+18:15:57.548 [INF]      Время обработки: 77 мс
+18:15:57.548 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+18:15:57.552 [INF] ==============================================
+18:15:57.557 [INF] ==============================================
+18:15:57.557 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.559 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.560 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/index.js - 200 null application/javascript;charset=utf-8 97.9631ms
+18:15:57.561 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/index.css - 200 202 text/css 100.7891ms
+18:15:57.563 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.564 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.574 [INF]      Status Code: 200
+18:15:57.575 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+18:15:57.575 [INF]      Status Code: 200
+18:15:57.576 [INF]      Content-Type: text/css
+18:15:57.578 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.580 [INF]      Content-Type: text/javascript
+18:15:57.581 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.583 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.584 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.585 [INF]      Время обработки: 117 мс
+18:15:57.586 [INF]      Status Code: 200
+18:15:57.587 [INF]      Время обработки: 109 мс
+18:15:57.589 [INF] ==============================================
+18:15:57.590 [INF]      Content-Type: text/javascript
+18:15:57.592 [INF] ==============================================
+18:15:57.594 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui.css - 200 152034 text/css 134.7225ms
+18:15:57.594 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.596 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 133.6979ms
+18:15:57.601 [INF]      Время обработки: 123 мс
+18:15:57.606 [INF] ==============================================
+18:15:57.608 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 147.0764ms
+18:15:57.753 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/favicon-16x16.png - null null
+18:15:57.757 [INF] ==============================================
+18:15:57.758 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.759 [INF]      Метод: GET
+18:15:57.760 [INF]      Путь: /swagger/favicon-16x16.png
+18:15:57.762 [INF]      Query: 
+18:15:57.763 [INF]      Content-Type: null
+18:15:57.764 [INF]      IP клиента: 127.0.0.1
+18:15:57.766 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.767 [INF]      TraceIdentifier: 0HNOPGLN5LK3I:00000002
+18:15:57.769 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.770 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+18:15:57.772 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:57.773 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:57.775 [INF]      Status Code: 200
+18:15:57.776 [INF]      Content-Type: image/png
+18:15:57.778 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:57.779 [INF]      Время обработки: 20 мс
+18:15:57.780 [INF] ==============================================
+18:15:57.781 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/favicon-16x16.png - 200 665 image/png 27.6774ms
+18:15:57.864 [INF] Request starting HTTP/1.1 GET http://localhost:5189/swagger/v1/swagger.json - null null
+18:15:57.868 [INF] ==============================================
+18:15:57.869 [INF] [1] ВХОДЯЩИЙ ЗАПРОС
+18:15:57.870 [INF]      Метод: GET
+18:15:57.871 [INF]      Путь: /swagger/v1/swagger.json
+18:15:57.872 [INF]      Query: 
+18:15:57.874 [INF]      Content-Type: null
+18:15:57.876 [INF]      IP клиента: 127.0.0.1
+18:15:57.877 [INF]      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:156.0) Gecko/20100101 Firefox/156.0
+18:15:57.879 [INF]      TraceIdentifier: 0HNOPGLN5LK3I:00000003
+18:15:57.880 [INF] [2] MIDDLEWARE PIPELINE — вход в следующий middleware
+18:15:57.903 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+18:15:58.036 [INF] [2] MIDDLEWARE PIPELINE — выход из следующего middleware
+18:15:58.037 [INF] [3] ФОРМИРОВАНИЕ ОТВЕТА
+18:15:58.038 [INF]      Status Code: 200
+18:15:58.040 [INF]      Content-Type: application/json;charset=utf-8
+18:15:58.041 [INF] [4] ЗАВЕРШЕНИЕ ЗАПРОСА
+18:15:58.042 [INF]      Время обработки: 173 мс
+18:15:58.044 [INF] ==============================================
+18:15:58.045 [INF] Request finished HTTP/1.1 GET http://localhost:5189/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 180.5718ms
+18:17:59.968 [INF] Application is shutting down...
