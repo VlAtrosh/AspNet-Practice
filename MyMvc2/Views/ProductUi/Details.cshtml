@@ -1,0 +1,39 @@
+﻿@model MyMvcApp.Models.Product
+@{
+    ViewData["Title"] = $"Товар #{Model.Id}";
+}
+
+<div class="container" style="max-width: 700px;">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a asp-controller="Home" asp-action="Index">Каталог</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </ol>
+    </nav>
+
+    <h1>@Model.Name</h1>
+    <hr />
+
+    <dl class="row">
+        <dt class="col-sm-3">ID</dt>
+        <dd class="col-sm-9">@Model.Id</dd>
+
+        <dt class="col-sm-3">Название</dt>
+        <dd class="col-sm-9">@Model.Name</dd>
+
+        <dt class="col-sm-3">Цена</dt>
+        <dd class="col-sm-9">@Model.Price.ToString("N2") ₽</dd>
+
+        <dt class="col-sm-3">Категория</dt>
+        <dd class="col-sm-9">
+            <span class="badge bg-secondary">@Model.Category</span>
+        </dd>
+    </dl>
+
+    <div class="mt-4">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">← Назад в каталог</a>
+        <a asp-controller="ProductUi" asp-action="Create" class="btn btn-primary">Добавить ещё товар</a>
+    </div>
+</div>
