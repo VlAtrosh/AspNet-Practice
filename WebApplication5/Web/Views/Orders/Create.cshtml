@@ -1,0 +1,91 @@
+﻿@model WebApplication3.Web.Models.CreateOrderViewModel
+@{
+    ViewData["Title"] = "Новый заказ";
+}
+
+<h1>Новый заказ</h1>
+
+<form asp-action="Create" method="post">
+    @* Общая ошибка формы (из ModelState) *@
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="CustomerEmail">Email клиента</label>
+        <input asp-for="CustomerEmail" class="form-control" />
+        <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+    </div>
+
+    <h3>Товары</h3>
+
+    <table class="table" id="items-table">
+        <thead>
+            <tr>
+                <th>ProductId</th>
+                <th>Количество</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Items.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <input asp-for="Items[i].ProductId" class="form-control" />
+                        <span asp-validation-for="Items[i].ProductId" class="text-danger"></span>
+                    </td>
+                    <td>
+                        <input asp-for="Items[i].Quantity" type="number" min="1" class="form-control" />
+                        <span asp-validation-for="Items[i].Quantity" class="text-danger"></span>
+                    </td>
+                    <td>
+                        <button type="button" class="btn-remove" onclick="this.closest('tr').remove()">✕</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="button" id="add-item" class="btn">+ Добавить товар</button>
+    <hr />
+    <button type="submit" class="btn btn-primary">Создать заказ</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById('add-item').addEventListener('click', function () {
+            var tbody = document.querySelector('#items-table tbody');
+            var index = tbody.querySelectorAll('tr').length;
+
+            var row = document.createElement('tr');
+
+            var td1 = document.createElement('td');
+            var input1 = document.createElement('input');
+            input1.name = 'Items[' + index + '].ProductId';
+            input1.className = 'form-control';
+            td1.appendChild(input1);
+            row.appendChild(td1);
+
+            var td2 = document.createElement('td');
+            var input2 = document.createElement('input');
+            input2.name = 'Items[' + index + '].Quantity';
+            input2.type = 'number';
+            input2.min = '1';
+            input2.value = '1';
+            input2.className = 'form-control';
+            td2.appendChild(input2);
+            row.appendChild(td2);
+
+            var td3 = document.createElement('td');
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'btn-remove';
+            btn.textContent = '✕';
+            btn.onclick = function () { row.remove(); };
+            td3.appendChild(btn);
+            row.appendChild(td3);
+
+            tbody.appendChild(row);
+        });
+    </script>
+}
